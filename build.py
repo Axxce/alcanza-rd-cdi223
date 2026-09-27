@@ -164,7 +164,7 @@ for i, (slug, label, desc) in enumerate(pages):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#153a80">
+<meta name="theme-color" content="#1B1B39">
 <meta name="description" content="{escape(d['lead'], quote=True)}">
 <title>{escape(label)} · Alcanza RD</title>
 <link rel="stylesheet" href="style.css">
@@ -185,7 +185,7 @@ for i, (slug, label, desc) in enumerate(pages):
 </div>
 <div class="site">
   <div class="topbar">
-    <a class="wordmark" href="portada.html">Alcanza RD<span style="color:var(--orange)">.</span></a>
+    <a class="wordmark" href="portada.html">Alcanza RD<span style="color:var(--coral)">.</span></a>
     <span class="topbar-note">Economía familiar y costo de vida</span>
   </div>
   <main>
