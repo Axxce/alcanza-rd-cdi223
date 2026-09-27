@@ -6,6 +6,7 @@ ROOT = Path(__file__).parent
 OUT = ROOT / 'dist'
 OUT.mkdir(exist_ok=True)
 copyfile(ROOT / 'assets' / 'laura-mendez.webp', OUT / 'laura-mendez.webp')
+copyfile(ROOT / 'assets' / 'familia-presupuesto.webp', OUT / 'familia-presupuesto.webp')
 copyfile(ROOT / 'assets' / 'unicaribe.png', OUT / 'unicaribe.png')
 
 pages = [
@@ -153,6 +154,11 @@ for i, (slug, label, desc) in enumerate(pages):
     links = ''.join('<a href="{}.html" {}>{}</a>'.format(s, 'aria-current="page"' if s == slug else '', l) for s, l, _ in pages)
     prev = f'<a href="{pages[i-1][0]}.html">← {pages[i-1][1]}</a>' if i else '<span></span>'
     nxt = f'<a href="{pages[i+1][0]}.html">{pages[i+1][1]} →</a>' if i + 1 < len(pages) else '<span></span>'
+    hero_visual = '''<figure class="hero-visual hero-visual--photo"><img src="familia-presupuesto.webp" alt="Familia reunida en la mesa de su casa mientras revisa cuentas y gastos" width="1448" height="1086" loading="eager"></figure>''' if slug == 'narrativa' else '''<div class="hero-visual" aria-hidden="true">
+        <div class="visual-panel"><span>ALCANZA RD</span><strong>La economía<br>en casa.</strong><small>Ingresos · Gastos · Decisiones</small></div>
+        <div class="visual-chip chip-a"><span>01 / HOGAR</span><b>Ingresos</b></div>
+        <div class="visual-chip chip-b"><span>02 / VIDA REAL</span><b>Gastos</b></div>
+      </div>'''
     html = f'''<!doctype html>
 <html lang="es">
 <head>
@@ -190,11 +196,7 @@ for i, (slug, label, desc) in enumerate(pages):
         <p>{d['lead']}</p>
         <div class="hero-actions"><a class="button" href="propuesta.html">Conocer la propuesta <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="visual-panel"><span>ALCANZA RD</span><strong>La economía<br>en casa.</strong><small>Ingresos · Gastos · Decisiones</small></div>
-        <div class="visual-chip chip-a"><span>01 / HOGAR</span><b>Ingresos</b></div>
-        <div class="visual-chip chip-b"><span>02 / VIDA REAL</span><b>Gastos</b></div>
-      </div>
+      {hero_visual}
     </div>
     <div class="content-body">{d['body']}</div>
     <div class="pager">{prev}{nxt}</div>

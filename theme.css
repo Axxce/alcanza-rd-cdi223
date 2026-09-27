@@ -40,6 +40,8 @@ main{max-width:1320px;margin:auto;padding:0 clamp(22px,5vw,72px) 76px}
 .button{display:inline-flex;align-items:center;gap:16px;background:var(--orange);color:#172133;text-decoration:none;padding:12px 20px;border-radius:10px;font-weight:700;box-shadow:0 9px 24px #df783526}
 .button:hover{background:#f67e26;color:#172133}
 .hero-visual{height:430px;position:relative;display:flex;align-items:center;justify-content:center}
+.hero .hero-visual--photo{display:block;width:100%;height:auto;aspect-ratio:4/3;margin:0;overflow:hidden;border-radius:24px;border:5px solid #fff;border-bottom:7px solid var(--orange);box-shadow:0 24px 48px #153a8033}
+.hero-visual--photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .visual-panel{position:relative;width:72%;height:330px;border-radius:24px;background:var(--blue);box-shadow:0 26px 50px #17428333;padding:32px;display:flex;flex-direction:column;justify-content:space-between;color:white;transform:rotate(-3deg)}
 .visual-panel:before{content:'';position:absolute;right:-22px;top:-22px;width:60px;height:60px;border-radius:50%;background:var(--orange)}
 .visual-panel span{font:700 12px Inter,Arial,sans-serif;letter-spacing:.16em}
