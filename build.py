@@ -75,7 +75,7 @@ card('Diálogo sobre ingresos','<p>Convocar a trabajadores, empleadores y autori
 ('3. Ejecutar el piloto','Ofrecer información y, si se aprueba, apoyos focalizados mediante mecanismos auditables y accesibles.'),
 ('4. Rendir cuentas','Publicar alcance, gasto, errores de inclusión o exclusión y resultados agregados sin exponer datos personales.'),
 ('5. Decidir continuidad','Comparar indicadores y escuchar a beneficiarios y no beneficiarios antes de ampliar, ajustar o cerrar el programa.')]) + '''</section>
-<div class="note"><strong>Lo que la propuesta no promete:</strong> congelar todos los precios, eliminar la inflación o depositar dinero a cada familia. Las medidas deben ser costeadas y aprobadas antes de aplicarse.</div>
+<aside class="note" aria-labelledby="note-title"><span class="note-kicker">LÍMITES DE LA PROPUESTA</span><h2 id="note-title">Lo que la propuesta no promete</h2><p>No plantea congelar todos los precios, eliminar la inflación ni depositar dinero a cada familia.</p><p>Las medidas tendrían que calcularse y aprobarse antes de aplicarse.</p></aside>
 ''')
 
 content['narrativa'] = dict(kicker='05 · NARRATIVA', title='Que el ingreso alcance', lead='La arquitectura del mensaje convierte una preocupación cotidiana en una propuesta con acciones, costos por definir y mecanismos de rendición de cuentas.', body='''
