@@ -8,6 +8,8 @@ OUT.mkdir(exist_ok=True)
 copyfile(ROOT / 'assets' / 'laura-mendez.webp', OUT / 'laura-mendez.webp')
 copyfile(ROOT / 'assets' / 'familia-presupuesto.webp', OUT / 'familia-presupuesto.webp')
 copyfile(ROOT / 'assets' / 'unicaribe.png', OUT / 'unicaribe.png')
+for image_name in ('alcanza-pieza-claridad.webp', 'alcanza-pieza-ingreso.webp', 'alcanza-maqueta-instagram.webp'):
+    copyfile(ROOT / 'assets' / image_name, OUT / image_name)
 
 pages = [
  ('portada','Portada','Proyecto final'),
@@ -135,7 +137,12 @@ content['plan-digital'] = dict(kicker='08 · PLAN DE COMUNICACIÓN DIGITAL', tit
 ('2 · Presentar la propuesta','Explicar las tres líneas de Alcanza RD.','Lunes: video de la candidata. Miércoles: infografía de tres acciones. Viernes: ficha de criterios todavía por definir.','Lee el plan completo. Visitas al sitio y preguntas sobre elegibilidad.'),
 ('3 · Resolver objeciones','Explicar costos, límites y diálogo salarial.','Lunes: carrusel Qué no prometemos. Miércoles: video de preguntas frecuentes. Viernes: conversatorio con trabajadores y comercios.','Pregunta por el presupuesto. Calidad de respuestas y dudas recurrentes.'),
 ('4 · Cerrar y evaluar','Recoger opinión y verificar comprensión.','Lunes: resumen de hallazgos. Miércoles: fragmento del discurso. Viernes: encuesta y publicación de aclaraciones.','Revisa la propuesta y responde. Comprensión y percepción de claridad.')]) + '''</section>
-<section class="secondary"><h2>Copys listos para piezas</h2><p><strong>Carrusel, semana 1:</strong> Si la inflación baja, los precios pueden seguir subiendo, solo que a menor ritmo. Por eso no basta con un titular: también hay que mirar cuánto alcanza el ingreso para los gastos del hogar. Conoce Alcanza RD, un ejercicio académico de UNICARIBE.</p><p><strong>Video, semana 3:</strong> ¿Habrá un apoyo para todas las familias? No lo estamos prometiendo. La propuesta plantea estudiar un apoyo temporal para hogares elegibles, con presupuesto y criterios públicos. Lee los límites y haz tu pregunta.</p></section>''')
+<section class="secondary"><h2>Copys listos para piezas</h2><p><strong>Carrusel, semana 1:</strong> Si la inflación baja, los precios pueden seguir subiendo, solo que a menor ritmo. Por eso no basta con un titular: también hay que mirar cuánto alcanza el ingreso para los gastos del hogar. Conoce Alcanza RD, un ejercicio académico de UNICARIBE.</p><p><strong>Video, semana 3:</strong> ¿Habrá un apoyo para todas las familias? No lo estamos prometiendo. La propuesta plantea estudiar un apoyo temporal para hogares elegibles, con presupuesto y criterios públicos. Lee los límites y haz tu pregunta.</p></section>
+<section><h2>Piezas visuales</h2><div class="campaign-gallery">
+<figure><a href="alcanza-pieza-claridad.webp" target="_blank" rel="noopener"><img src="alcanza-pieza-claridad.webp" alt="Pieza de Alcanza RD sobre inflación, precios e ingreso familiar" width="1122" height="1402" loading="lazy" decoding="async"></a><figcaption>Propuesta gráfica 1 · Costo de vida</figcaption></figure>
+<figure><a href="alcanza-pieza-ingreso.webp" target="_blank" rel="noopener"><img src="alcanza-pieza-ingreso.webp" alt="Pieza de Alcanza RD con tres ideas sobre el ingreso del hogar" width="1122" height="1402" loading="lazy" decoding="async"></a><figcaption>Propuesta gráfica 2 · Poder adquisitivo</figcaption></figure>
+<figure><a href="alcanza-maqueta-instagram.webp" target="_blank" rel="noopener"><img src="alcanza-maqueta-instagram.webp" alt="Maqueta ilustrativa de una publicación de Laura Méndez en Instagram" width="1080" height="1350" loading="lazy" decoding="async"></a><figcaption>Maqueta de publicación en Instagram</figcaption></figure>
+</div></section>''')
 
 content['riesgos'] = dict(kicker='09 · GESTIÓN DE RIESGOS', title='Promesas claras, datos verificables', lead='La comunicación económica puede generar expectativas inmediatas. Cada afirmación necesita fecha, fuente y alcance.', body='''
 <section><h2>Matriz de riesgos y respuesta</h2>'''+table(['Riesgo','Prevención','Respuesta si ocurre'],[
