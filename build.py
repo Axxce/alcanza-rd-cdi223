@@ -37,10 +37,10 @@ def table(headers, rows):
 
 content = {}
 
-content['portada'] = dict(kicker='UNICARIBE · CDI-223', title='Alcanza RD', lead='Plan de Comunicación Digital para una propuesta de discurso político sobre economía familiar, inflación, salarios y poder adquisitivo.', body='''
+content['portada'] = dict(kicker='UNICARIBE · PROYECTO FINAL', title='Alcanza RD', lead='Plan de Comunicación Digital para una propuesta de discurso político sobre economía familiar, inflación, salarios y poder adquisitivo.', body='''
 <div class="statement"><span>IDEA CENTRAL</span><p>Que el ingreso alcance para la vida real.</p></div>
 <section><img class="unicaribe-logo" src="unicaribe.png" alt="Logo de la Universidad del Caribe, UNICARIBE"><h2>Ficha del proyecto</h2>
-<div class="fact-grid"><div><b>Universidad</b><span>Universidad del Caribe (UNICARIBE)</span></div><div><b>Carrera</b><span>Comunicación Digital</span></div><div><b>Asignatura</b><span>Metodología del Discurso Escrito y Oral · CDI-223</span></div><div><b>Tema de la ficha</b><span>Economía familiar y costo de vida</span></div><div><b>Enfoque</b><span>Inflación, salarios y poder adquisitivo de hogares trabajadores de la provincia de San Juan</span></div><div><b>Sustentantes e ID</b><span>Fanuel Mesa · A00164410<br>Ian Rosario · A00162192<br>Cesibel De Jesús · A100169892</span></div><div><b>Docente</b><span>Sergio Elías Meregildo Rodríguez</span></div><div><b>Lugar y fecha</b><span>Santo Domingo, República Dominicana · septiembre de 2026</span></div></div></section>
+<div class="fact-grid"><div><b>Universidad</b><span>Universidad del Caribe (UNICARIBE)</span></div><div><b>Carrera</b><span>Comunicación Digital</span></div><div><b>Asignatura</b><span>Metodología del Discurso Escrito y Oral</span></div><div><b>Tema de la ficha</b><span>Economía familiar y costo de vida</span></div><div><b>Enfoque</b><span>Inflación, salarios y poder adquisitivo de hogares trabajadores de la provincia de San Juan</span></div><div><b>Sustentantes e ID</b><span>Fanuel Mesa · A00164410<br>Ian Rosario · A00162192<br>Cesibel De Jesús · A100169892</span></div><div><b>Docente</b><span>Sergio Elías Meregildo Rodríguez</span></div><div><b>Lugar y fecha</b><span>Santo Domingo, República Dominicana · septiembre de 2026</span></div></div></section>
 <section><h2>El proyecto en un minuto</h2><p>Laura Méndez, abogada nacida en San Juan de la Maguana y aspirante al Senado por San Juan, presenta <strong>Alcanza RD</strong>: un plan piloto para proteger el poder adquisitivo de hogares trabajadores de ingresos bajos y medios en la provincia. La propuesta combina información verificable sobre gastos esenciales, apoyo temporal y focalizado durante aumentos extraordinarios en alimentos o transporte, y una mesa de diálogo sobre salarios e ingresos. Cada medida dependería de presupuesto, criterios públicos y evaluación. El plan de comunicación explica qué puede hacer una política pública, qué todavía requiere estudio y cómo escuchar a las familias.</p><p><a class="button" href="inicio.html">Explorar el proyecto <span aria-hidden="true">↗</span></a></p></section>
 ''')
 
@@ -163,7 +163,7 @@ content['evaluacion'] = dict(kicker='10 · EVALUACIÓN', title='Medir si se enti
 ('Calidad de respuesta','Dudas respondidas con explicación o fuente verificable.','Si el equipo escucha y corrige con claridad.'),
 ('Participación comunitaria','Asistencia y resumen anónimo del conversatorio.','Si se escucharon voces fuera de redes sociales.')]) + '''</section>
 <section><h2>Preguntas de la encuesta de cierre</h2><ol><li>Si la inflación baja de una tasa a otra, ¿significa necesariamente que los precios regresaron al nivel anterior?</li><li>¿Alcanza RD ya existe o es una propuesta académica sujeta a presupuesto y aprobación?</li><li>¿Qué parte requiere más explicación: información de precios, apoyo temporal, salarios o costos?</li></ol><p>El equipo compararía las respuestas con las dudas recogidas en la primera semana y corregiría las piezas menos comprendidas. Un alto número de vistas no bastaría para declarar exitosa la comunicación.</p></section>
-<section class="secondary"><h2>Fuentes y alcance de la evidencia</h2><p><a href="https://www.bancentral.gov.do/a/d/6653-bcrd-informa-que-la-variacion-del-ipc-en-agosto-2026-fue-de-038-" target="_blank" rel="noopener">BCRD: IPC de agosto de 2026 ↗</a> · <a href="https://www.presidencia.gob.do/noticias/ministerio-de-trabajo-llama-empresarios-cumplir-con-el-pago-del-aumento-del-8-del-salario" target="_blank" rel="noopener">Ministerio de Trabajo: salario mínimo desde febrero de 2026 ↗</a> · Ficha de instrucciones del proyecto final CDI-223, UNICARIBE, septiembre de 2026.</p><p>Las fuentes sustentan el contexto. Alcanza RD, la candidata, las medidas y los casos narrativos son ficticios y no se presentan como políticas vigentes ni como efectos económicos demostrados.</p></section>''')
+<section class="secondary"><h2>Fuentes y alcance de la evidencia</h2><p><a href="https://www.bancentral.gov.do/a/d/6653-bcrd-informa-que-la-variacion-del-ipc-en-agosto-2026-fue-de-038-" target="_blank" rel="noopener">BCRD: IPC de agosto de 2026 ↗</a> · <a href="https://www.presidencia.gob.do/noticias/ministerio-de-trabajo-llama-empresarios-cumplir-con-el-pago-del-aumento-del-8-del-salario" target="_blank" rel="noopener">Ministerio de Trabajo: salario mínimo desde febrero de 2026 ↗</a> · Ficha de instrucciones del proyecto final de UNICARIBE, septiembre de 2026.</p><p>Las fuentes sustentan el contexto. Alcanza RD, la candidata, las medidas y los casos narrativos son ficticios y no se presentan como políticas vigentes ni como efectos económicos demostrados.</p></section>''')
 
 css = (ROOT / 'theme.css').read_text(encoding='utf-8')
 (OUT / 'style.css').write_text(css, encoding='utf-8')
@@ -194,14 +194,14 @@ for i, (slug, label, desc) in enumerate(pages):
 <aside class="rail" aria-label="Acceso al menú principal">
   <a class="rail-brand" href="portada.html" aria-label="Alcanza RD, ir a portada">ARD</a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-drawer" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
-  <span class="rail-label">CDI-223 · UNICARIBE</span>
+  <span class="rail-label">UNICARIBE</span>
 </aside>
 <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
 <div class="drawer" id="site-drawer" aria-hidden="true">
   <div class="drawer-title">Explora el proyecto</div>
   <p class="drawer-sub">Alcanza RD · 11 secciones</p>
   <nav aria-label="Páginas del proyecto">{links}</nav>
-  <small>Proyecto final · UNICARIBE CDI-223</small>
+  <small>Proyecto final · UNICARIBE</small>
 </div>
 <div class="site">
   <div class="topbar">
@@ -222,7 +222,7 @@ for i, (slug, label, desc) in enumerate(pages):
     <div class="pager">{prev}{nxt}</div>
   </main>
 </div>
-<footer><div>Alcanza RD · Propuesta ficticia con fines académicos · UNICARIBE CDI-223 · 2026.<br>El contenido no representa una política pública vigente ni una candidatura real.</div></footer>
+<footer><div>Alcanza RD · Propuesta ficticia con fines académicos · UNICARIBE · 2026.<br>El contenido no representa una política pública vigente ni una candidatura real.</div></footer>
 </body>
 </html>'''
     (OUT / f'{slug}.html').write_text(html, encoding='utf-8')
